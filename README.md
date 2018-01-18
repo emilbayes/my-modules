@@ -32,7 +32,8 @@ possible for super fast hashing. Forked form [`dcposch/blakejs`](https://github.
 
 Generate random integers uniformly in a range. A secure drop in for where you'd
 normally use `Math.random` in user facing scenarios (which is almost always).
-Can generate integers in `[0, 2^53 - 1)` (which is `Number.MAX_SAFE_INTEGER`).
+Can generate integers in `[0, 2^53)` (which is `Number.MAX_SAFE_INTEGER`, ie.
+any representable integer in Javascript).
 Uses `libsodium`s CSPRNG (Cryptographically Secure Pseudo Random Number Generator)
 
 #### [<code><i>emilbayes</i>/<b>secure-random-shuffle</b></code>](https://github.com/emilbayes/secure-random-shuffle)
